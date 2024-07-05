@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      SECRET_KEY: "C3d0jjnUxKdY6aatHs0lvqvYbTimNYOyuSqfIKkHjCSqQaa1Ww"
+      FLY_APP_NAME: "proyectoaker"
+    volumes:
+      - .:/code

@@ -1,0 +1,56 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+  
+
+<main>
+  <article>
+    <section>
+      <div class="container">
+        <div class="col-12 col-md-12 col-xl-12 formularioContacto" data-aos="zoom-out">
+          <form id="form" class="formulario" action="https://formsubmit.co/nicoeei@gmail.com" method="post">
+            <h1 class="title">Contactanos</h1>
+            <div class="inputContainer">
+              <input type="email" class="input" id="email" name="email" placeholder="email" />
+              <label for="" class="label">Email</label>
+
+              <small>Error message</small>
+            </div>
+
+            <div class="inputContainer">
+              <input type="text" class="input" id="nombre" name="name" placeholder="Nombre" />
+              <label for="" class="label">Nombre</label>
+
+              <small>Error message</small>
+            </div>
+
+            <div class="inputContainer">
+              <input type="text" class="input" id="apellido" name="lastname" placeholder="Apellido" />
+              <label for="" class="label">Apellido</label>
+
+              <small>Error message</small>
+            </div>
+
+            <div class="inputContainer">
+              <textarea name="comments" id="mensaje" cols="10" rows="5" class="input" placeholder="Escribe un comentario" maxlength="160"></textarea>
+              <label for="" class="label">Escribe un comentario</label>
+
+              <small>Error message</small>
+            </div>
+            <input type="submit" id="mandar" class="submitBtn" value="Enviar" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/contacto.html" />
+          </form>
+    
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
+
+{% endblock content %}
+  
+    

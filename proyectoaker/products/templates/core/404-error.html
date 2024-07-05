@@ -1,0 +1,111 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <!-- Modal Filtro -->
+
+    <div class="contenedorMaximo">
+        <div class="filtro">
+            <div class="filtroContenedor">
+                <label class="textFiltro">Ordenar por: </label>
+                <div class="boxFilter">
+
+                    <select name="selectBox">
+                        <option>Seleccionar</option>
+                        <option value="value1">Precio Mayor a Menor</option>
+                        <option value="value2">Precio Menor a Mayor</option>
+                        <option value="value3">A-Z</option>
+                        <option value="value4">Z-A</option>
+                    </select>
+
+
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Filtrado
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="filtroContenedor2">
+                            <h5 class="catFiltro">Categorias </h5>
+                            <ul>
+                                {% for cat in categories %}
+                                    <li class="listFiltro">
+                                        <a href={% url 'search-products' %}?categoria={{ cat.name }}>{{ cat.name }}</a>{% csrf_token %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="filtroContenedor2">
+                            <h5 class="catFiltro">Gustos </h5>
+                            <ul>
+                                <li class="listFiltro">
+                                    <a href="./contacto.html">Protenias</a>
+                                </li>
+                                <li class="listFiltro">
+                                    <a href="">Chocolate</a>
+                                </li>
+                                <li class="listFiltro">
+                                    <a href="">Frutilla</a>
+                                </li>
+                                <li class="listFiltro">
+                                    <a href="">Vainilla</a>
+                                </li>
+                                <li class="listFiltro">
+                                    <a href="">Americana</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Termina modal de filtro -->
+
+        <div class="containerProduct2">
+            <aside class="filtro2">
+                <div class="filtroContenedor2">
+                    <h5 class="catFiltro">Categorias </h5>
+                    <ul>
+                        {% for cat in categories %}
+                            <li class="listFiltro">
+                                <a href={% url 'search-products' %}?categoria={{ cat.name }}>{{ cat.name }}</a>{% csrf_token %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="filtroContenedor2">
+                    <h5 class="catFiltro">Gustos </h5>
+                    <ul>
+                        <li class="listFiltro">
+                            <a href="./contacto.html">Protenias</a>
+                        </li>
+                        <li class="listFiltro">
+                            <a href="">Chocolate</a>
+                        </li>
+                        <li class="listFiltro">
+                            <a href="">Frutilla</a>
+                        </li>
+                        <li class="listFiltro">
+                            <a href="">Vainilla</a>
+                        </li>
+                        <li class="listFiltro">
+                            <a href="">Americana</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        <div class="error404">
+            <h1># No se ha encontrado ningun producto con ese nombre #</h1>
+        </div>
+        </div>
+    </div>
+
+{% endblock content %}
