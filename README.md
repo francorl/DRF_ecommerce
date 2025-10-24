@@ -26,9 +26,7 @@ Key technologies used include Python, Django, Django Rest Framework, and Postgre
 - ⚡ **Performance**: Optimized for speed and efficiency, ensuring a smooth user experience.
 - 🛠️ **Extensible**: Easily customizable and extensible to meet specific business requirements.
 
-## 🎬 Demo
 
-🔗 **Live Demo**: [https://your-demo-url.com](https://your-demo-url.com)
 
 ### Screenshots
 ![Products List](screenshots/products-list.png)
@@ -47,8 +45,6 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
-
-Open [http://localhost:8000](http://localhost:8000) to view the API in your browser.
 
 ## 📦 Installation
 
