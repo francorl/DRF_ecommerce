@@ -28,13 +28,6 @@ Key technologies used include Python, Django, Django Rest Framework, and Postgre
 
 
 
-### Screenshots
-![Products List](screenshots/products-list.png)
-*A list of available products with details.*
-
-![Product Detail](screenshots/product-detail.png)
-*Detailed information about a specific product.*
-
 ## 🚀 Quick Start
 
 Clone and run in 3 steps:
@@ -282,17 +275,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - ❌ Liability
 - ❌ Warranty
 
-## 💬 Support
-
-- 📧 **Email**: your.email@example.com
-- 🐛 **Issues**: [GitHub Issues](https://github.com/francorl/DRF_ecommerce/issues)
-- 📖 **Documentation**: [Full Documentation](https://docs.your-site.com)
-
-## 🙏 Acknowledgments
-
-- 🎨 **Design inspiration**: [Dribbble](https://dribbble.com/)
-- 📚 **Libraries used**:
-  - [Django Rest Framework](https://www.django-rest-framework.org/) - Powerful and flexible toolkit for building Web APIs.
-  - [Django](https://www.djangoproject.com/) - High-level Python Web framework that encourages rapid development and clean, pragmatic design.
-- 👥 **Contributors**: Thanks to all [contributors](https://github.com/francorl/DRF_ecommerce/contributors)
 ```
